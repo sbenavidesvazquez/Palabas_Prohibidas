@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Palabas Prohibidas</string>
+    <string name="menujuego">Jugar</string>
+    <string name="puntuacion">Puntuacion</string>
+</resources>
