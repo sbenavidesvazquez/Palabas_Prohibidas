@@ -1,35 +1,48 @@
 package com.example.samsung.palabasprohibidas;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.net.InetSocketAddress;
-import java.net.Socket;
+import android.content.Context;
+import android.os.AsyncTask;
+import android.widget.TextView;
+import android.widget.Toast;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 /**
  * La clase que enviará datos al servidor
  * Created by samsung on 20/01/2016.
  */
-public class Cliente {
+public class Cliente extends AsyncTask<String,Void,ResultSet>{
 
-    final String host="168.100.1.3";
-    final int port=8080;
-    Socket socketcliente;
-    OutputStream ops;
-
-    public void conect(){
+    @Override
+    protected ResultSet doInBackground(String... params) {
+        Connection con;
         try {
-            socketcliente= new Socket();
-            InetSocketAddress adress= new InetSocketAddress(host, port);
-            socketcliente.connect(adress);
+            Class.forName("com.mysql.jdbc.Driver").newInstance();
 
+            con=DriverManager.getConnection("jdbc:mysql://db4free.net:3306/palabras?autoReconnect=True&useSSL=false","sergbena","benavides1893");
 
-        } catch (IOException e) {
+            Statement st=con.createStatement();
+            ResultSet rs=st.executeQuery("select * from adivinar");
+            con.close();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
             e.printStackTrace();
         }
 
+        return null;
     }
 
+    @Override
+    protected void onPostExecute(ResultSet resultSet){
 
+    }
 
 }
