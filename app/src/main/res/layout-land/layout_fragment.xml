@@ -8,7 +8,7 @@
     android:layout_width="0dp"
     android:layout_weight="1"
     android:layout_height="match_parent"
-    class="com.example.samsung.palabasprohibidas.BaseDatos"></fragment>
+    class="com.example.samsung.palabasprohibidas.Palabras"></fragment>
 
     <fragment
         android:id="@+id/chatfragment"

@@ -1,5 +1,6 @@
 package com.example.samsung.palabasprohibidas;
 
+import android.app.Fragment;
 import android.widget.TextView;
 
 import java.sql.Connection;
@@ -40,7 +41,7 @@ public class AccesoPalabras extends Thread {
         }
 
         try {
-            con= DriverManager.getConnection("jdbc:mysql://db4free.net:3306/palabras?useSSL=false", "sergbena", "benavides1893");
+            con= DriverManager.getConnection("jdbc:mysql://db4free.net:3306/palabras?autoReconnect=True&&useSSL=false", "sergbena", "benavides1893");
 
             Statement st=con.createStatement();
             ResultSet rs=st.executeQuery("select * from adivinar");

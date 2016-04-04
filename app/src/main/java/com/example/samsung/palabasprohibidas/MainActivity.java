@@ -25,10 +25,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.words_layout);
+        setContentView(R.layout.layout_fragment);
 
-        //WebView views= (WebView) findViewById(R.id.pagechat);
-        //views.loadUrl("http://apptabu.herokuapp.com/");
+        /*WebView views= (WebView) findViewById(R.id.pagechat);
+        views.loadUrl("http://apptabu.herokuapp.com/");
         TextView ta= (TextView) findViewById(R.id.tvAdivinar);
         TextView tp1= (TextView) findViewById(R.id.tvPalabra1);
         TextView tp2= (TextView) findViewById(R.id.tvpalabra2);
@@ -38,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
 
         AccesoPalabras ap=new AccesoPalabras(ta,tp1,tp2,tp3,tp4,tp5);
         ap.run();
+        Cliente c=new Cliente();
+        c.execute();*/
 
     }
 

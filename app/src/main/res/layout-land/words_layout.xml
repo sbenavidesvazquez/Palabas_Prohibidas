@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout2"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Palabra a adivinar"
+            android:id="@+id/tvAdivinar"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/linearLayout2"
+        android:paddingTop="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Palabra prohibida"
+            android:id="@+id/tvPalabra1"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="palabra prohibida2"
+            android:id="@+id/tvpalabra2"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="palabra prohibida3"
+            android:id="@+id/tvpalabra3"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="palabra prohibida4"
+            android:id="@+id/tvpalabra4"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="palabra prohibida 5"
+            android:id="@+id/tvpalabra5"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="25dp"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,5 +1,6 @@
 package com.example.samsung.palabasprohibidas;
 
+import android.app.Fragment;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.widget.TextView;
@@ -42,7 +43,9 @@ public class Cliente extends AsyncTask<String,Void,ResultSet>{
 
     @Override
     protected void onPostExecute(ResultSet resultSet){
-
+        Context context = null;
+        Toast t=Toast.makeText(context,"conexion realizada",Toast.LENGTH_LONG);
+        t.show();
     }
 
 }
