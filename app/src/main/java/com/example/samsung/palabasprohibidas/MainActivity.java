@@ -27,22 +27,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_fragment);
 
-        /*WebView views= (WebView) findViewById(R.id.pagechat);
-        views.loadUrl("http://apptabu.herokuapp.com/");
-        TextView ta= (TextView) findViewById(R.id.tvAdivinar);
-        TextView tp1= (TextView) findViewById(R.id.tvPalabra1);
-        TextView tp2= (TextView) findViewById(R.id.tvpalabra2);
-        TextView tp3= (TextView) findViewById(R.id.tvpalabra3);
-        TextView tp4= (TextView) findViewById(R.id.tvpalabra4);
-        TextView tp5= (TextView) findViewById(R.id.tvpalabra5);
-
-        AccesoPalabras ap=new AccesoPalabras(ta,tp1,tp2,tp3,tp4,tp5);
-        ap.run();
-        Cliente c=new Cliente();
-        c.execute();*/
-
+        
     }
-
-
 
 }
